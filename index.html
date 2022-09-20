@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link href="./style.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>INTERIOR</title>
   </head>
@@ -20,7 +21,7 @@
               src="https://cdn.lordicon.com/msoeawqm.json"
               trigger="hover"
               colors="primary:#121331,secondary:#242424"
-              style="width: 32px; height: 32px"
+              style="width: 30px; height: 30px"
             >
             </lord-icon>
 
@@ -32,7 +33,7 @@
               src="https://cdn.lordicon.com/hzomhqxz.json"
               trigger="hover"
               colors="primary:#121331,secondary:#242424"
-              style="width: 40px; height: 100px"
+              style="width: 35px; height: 35px"
             >
             </lord-icon
             >Services
@@ -43,7 +44,7 @@
               src="https://cdn.lordicon.com/rqqkvjqf.json"
               trigger="hover"
               colors="primary:#121331,secondary:#242424"
-              style="width: 30px; height: 250px"
+              style="width: 30px; height: 30px"
             >
             </lord-icon
             >Projects
@@ -53,7 +54,7 @@
             <lord-icon
               src="https://cdn.lordicon.com/tkgyrmwc.json"
               trigger="hover"
-              style="width: 32px; height: 32px"
+              style="width: 35px; height: 35px"
             >
             </lord-icon
             >Contacts
@@ -61,26 +62,56 @@
         </ul>
 
         <div>
-          <button class="btn-w headerBtn">Try For Free</button>
+          <button class="btn-w headerBtn up">Try For Free</button>
         </div>
       </div>
     </header>
 
     <div class="hero-section">
-      <div class="hero">
+      <div class="hero" data-aos="fade-up" data-aos-duration="3000">
         <h1>SKETCH LUXURY INTERIOR DESIGN</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque alias
           error doloremque praesentium vitae, aut recusandae earum ipsam eius
           tempore consequatur aliquid assumenda
         </p>
-
-        <button class="btn-b">Get Started</button>
-        <button class="btn-w">Contact Us</button>
+        <div class="button-group">
+          <button class="btn-b big">Get Started</button>
+          <button class="btn-w big">Contact Us</button>
+        </div>
       </div>
-      <div class="img">
+      <div class="img" data-aos="fade-down" data-aos-duration="3000">
         <img src="./i1.svg" />
       </div>
     </div>
+
+    <div class="brands">
+      <img src="./brands/amazon-logo-transparent.png" />
+      <img src="./brands/2278px-Bench-Logo.svg.png" />
+      <img src="./brands/logo-brand-nike-png-10.png" />
+      <img src="./brands/reebok-logo.png" />
+      <img src="./brands/brand.webp" />
+    </div>
+
+    <div class="provide-container">
+      <div class="provider-head">
+        <h2>What We Provide</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum minus
+          non eaque odio impedit asperiores pariatur.
+        </p>
+      </div>
+      <div class="boxes">
+        <div class="box white"></div>
+        <div class="box black"></div>
+        <div class="box white"></div>
+      </div>
+    </div>
+
+    <!-- --------------------------------- -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
