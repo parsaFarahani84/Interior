@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+body {
+  font-family: "Playfair Display", serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header-main {
+  display: flex;
+  height: 4rem;
+  width: 100vw;
+  justify-content: space-between;
+  padding: 1rem 10rem 0 10rem;
+  align-items: center;
+}
+
+.header-ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  height: 2rem;
+}
+.btn-w {
+  background-color: #fff;
+  padding: 0.6rem 0.75rem;
+  font-size: 0.8rem;
+  border: 1.5px solid rgb(67, 67, 67);
+  cursor: pointer;
+  transition: all 0.5s;
+  color: black;
+}
+
+.btn-b {
+  background-color: #000;
+  padding: 0.6rem 0.75rem;
+  font-size: 0.8rem;
+  border: 1.5px solid rgb(67, 67, 67);
+  cursor: pointer;
+  transition: all 0.5s;
+  color: white;
+}
+
+.btn-w:hover {
+  margin-bottom: 0.7rem;
+}
+
+.btn-b:hover {
+  margin-bottom: 0.7rem;
+}
+
+.logo-div img {
+  width: 12rem;
+}
+
+.options {
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  display: flex;
+}
+
+.hero-section {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 3rem;
+}
+
+.hero h1 {
+  font-weight: 800;
+}
+
+.img img {
+  width: 20rem;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
