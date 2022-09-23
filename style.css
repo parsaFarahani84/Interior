@@ -261,14 +261,19 @@ body {
 
 .rat-nav {
   display: flex;
-  /* justify-content: center; */
+  justify-content: space-between;
   align-items: center;
   gap: 1rem;
   margin-bottom: 2rem;
 }
 .rating-box {
   padding: 1rem;
-  /* border: 2px solid black; */
+  /* margin-right: -0.2rem; */
+}
+
+.rat-t {
+  display: flex;
+  gap: 1rem;
 }
 
 .rat-text {
@@ -277,6 +282,7 @@ body {
   align-items: center;
   justify-content: center;
   margin: auto;
+  height: 50%;
 }
 
 .rat-text p {
@@ -291,4 +297,149 @@ body {
   margin-top: 4rem;
   width: 60%;
   height: 300px;
+}
+
+.swiper-button-next {
+  color: black;
+}
+
+.black-c {
+  background-color: black;
+  color: #fff;
+}
+
+.black-c img {
+  border: 2px solid white !important;
+}
+
+.stars img {
+  border: none !important;
+  width: 2rem;
+}
+
+.ttt p {
+  font-size: 0.75rem;
+}
+
+.sub-container {
+  border-top: 3px solid black;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 4rem 8rem 4rem 8rem;
+  border-bottom: 2px solid black;
+}
+
+.sub-container h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.sub-container p {
+  font-size: 0.8rem;
+  color: grey;
+  width: 50%;
+  text-align: center;
+}
+
+.news-box {
+  /* padding-bottom: 5rem; */
+  margin-top: 2rem;
+  display: flex;
+  gap: 0;
+  width: 100%;
+  justify-content: center;
+}
+.news-box input {
+  height: 3rem;
+  width: 13rem;
+  display: flex;
+}
+.news-box button {
+  height: 3rem;
+  background-color: #000;
+  color: #fff;
+  padding: 0.7rem;
+  transition: all 0.3s;
+  cursor: pointer;
+  border: 2px solid black;
+  margin-left: -1rem;
+}
+
+.news-box button:hover {
+  background-color: white;
+  color: black;
+}
+
+.foot-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 2rem 4rem 2rem 4rem;
+  height: 20rem;
+}
+
+.foot-container img {
+  width: 9rem;
+  margin-left: -1rem;
+}
+
+.g {
+  display: flex;
+  flex-direction: column;
+  grid: 2rem;
+  padding: 1rem;
+}
+
+.g h5 {
+  margin-top: 0.5rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.g h2 {
+  font-weight: 800;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.bright {
+  border-right: 3px solid black;
+}
+
+a {
+  background-image: linear-gradient(to right, #677377, #677377 50%, #000 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+a:before {
+  content: "";
+  background: #677377;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+  background-position: 0;
+}
+
+a:hover::before {
+  width: 100%;
 }
