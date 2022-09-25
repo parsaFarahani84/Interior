@@ -375,10 +375,13 @@ body {
 }
 
 .foot-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
   padding: 2rem 4rem 2rem 4rem;
   height: 20rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .foot-container img {
@@ -442,4 +445,13 @@ a:hover {
 
 a:hover::before {
   width: 100%;
+}
+
+.wave {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin-top: -14rem;
+  z-index: -1;
+  margin-bottom: -0.5rem;
 }
